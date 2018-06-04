@@ -1,0 +1,10 @@
+MDPI_template*
+*.aux
+*.blg
+*.out
+*.bbl
+*.bcf
+*.log
+*.run.xml
+cpbe.pdf
+cpbe-x.pdf
