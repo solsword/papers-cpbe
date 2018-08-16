@@ -80,19 +80,17 @@ $^{4}$ \quad University of California Santa Cruz; [michaelm, nwf]@soe.ucsc.edu}
 \corres{Correspondence: pmawhorter@gmail.com}
 
 \abstract{%
-Choice poetics is a formalist framework that seeks to capture the impacts choices have on player experiences within narrative games.
+Choice poetics is a formalist framework that seeks to concretely describe the impacts choices have on player experiences within narrative games.
 %
 Developed in part to support algorithmic generation of narrative choices, the theory includes a detailed analytical framework for understanding the impressions choice structures make by analyzing the relationships between options, outcomes, and player goals.
 %
 The theory also emphasizes the need to account for players' various modes of engagement, which vary both during play and between players.
 %
-In this work, we illustrate the non-computational application of choice poetics to the analysis of three different choices, in order to further develop the theory and make it more accessible to others.
+In this work, we illustrate the non-computational application of choice poetics to the analysis of two different games, in order to further develop the theory and make it more accessible to others.
 %
-We focus first on analyzing so-called false choices in the game ``Mass Effect,'' and show how they actually provide meaningfully different outcomes for players who are utilizing certain modes of engagement.
+We focus first on using choice poetics to examine the central repeated choice in ``Undertale,'' and show how it can be used to contrast two different player types that will approach a choice differently.
 %
-Second, we use choice poetics to examine the central repeated choice in ``Undertale,'' and show how it can be used to contrast two different player types that will approach a choice differently.
-%
-Finally, we give an example of fine-grained analysis using a choice from the game ``Papers Please,'' which breaks down options and their outcomes to illustrate how the choice pushes players towards complicity via the introduction of uncertainty.
+Finally, we give an example of fine-grained analysis using a choice from the game ``Papers, Please,'' which breaks down options and their outcomes to illustrate exactly how the choice pushes players towards complicity via the introduction of uncertainty.
 %
 Through all of these examples, we hope to show the usefulness of choice poetics as a framework for understanding narrative choices, and to demonstrate concretely how one could productively apply it to choices `in the wild.'}  
 
@@ -114,14 +112,16 @@ We hope that these examples not only demonstrate the use of the framework, but a
 
 
 \label{sec:analysis_steps}
-The formal process of choice poetic analysis, having been designed with operationalization in mind, is quite detailed, but it can be summarized in four steps:
+The formal process of choice poetic analysis, having been designed with operationalization in mind, is quite detailed, but it can be summarized in four steps (concrete examples of these steps are provided later on):
 \begin{enumerate}
-  \item \textbf{Goal Analysis}: Consider the player's mode(s) of engagement (e.g., role play, power play, etc.), and observe or assume the set of goals that influences their decisions. For a specific analysis, defining one or more model players in terms of goal sets is often sufficient.
-  \item \textbf{Likelihood Analysis}: Review the options offered at the choice in question, and note the full range of outcomes that they suggest, as well as the outcomes they actually produce. Also note how likely each suggested outcome seems to be.
+  \item \textbf{Goal Analysis}: Consider the player's mode(s) of engagement (e.g., role play, power play, etc.), and observe or assume the set of goals that influences their decisions. For a specific analysis, defining one or more player models (as prioritized set(s) of goals) is often sufficient.
+  \item \textbf{Likelihood Analysis}: Review the options offered at the choice being analyzed, and note the full range of outcomes that those options might suggest to the player, as well as the outcomes they actually produce. Also note how likely each suggested outcome seems to be.
   \item \textbf{Prospective Analysis}: Describe the impact of each \emph{suggested outcome} on each player goal. This gives an overall impression of how the choice will appear to the player as they encounter it, known as their \textbf{prospective impression}. Specific option/outcome patterns may be recognizable at this point.
   \item \textbf{Retrospective Analysis}: Review the \emph{actual} outcomes of each option, and describe their impacts on each player goal. This produces a picture of the \textbf{retrospective impression} that the choice will leave on the player once they observe an outcome. Pay close attention to any differences between suggested and actual outcomes. Again, specific patterns may be identifiable at this stage.
 \end{enumerate}
-Usually, specific questions about a choice can be answered by examining the prospective and/or retrospective impression tables for each option at a choice.
+These four steps produce tables of prospective and retrospective impression labels for each option, which can usually be used to answer specific questions about a choice (e.g., ``Which option will this type of player favor?'' or ``Will the player feel this is a difficult choice?'').
+%
+In some cases, producing multiple contrasting analyses using different starting assumptions (such as about player goals or outcome likelihoods) can be used to answer design questions (e.g., ``Will this choice tend to separate players according to player types?'' or ``Should the likelihood of this outcome be important for how players will perceive this choice?'').
 
 \label{sec:prospective_labels}
 
@@ -136,16 +136,7 @@ Note that most option/goal combinations will receive more than one label, e.g., 
 The assignment of prospective labels allows us to analyze the choice by comparing it to known choice structures, or just by observing patterns among the labels.
 
 
-Our first example analysis is a ``false'' choice from the game \emph{Mass Effect} \citep{bioware2007mass}, which demonstrates the importance of modes of engagement in approaching choice analysis.
-%
-Throughout the game, the player is presented with choices where several options lead to identical results, even to the point where the dialogue spoken by the player character as a result of the choice is the same.
-%
-The motives behind these choice constructions and their impact on the player have already been discussed (see e.g., \cite{jorgensen2010game,bizzocchi2012mass,boyan2015massively}), but we feel that their specific relation to role play has not been examined in detail.
-%
-As we will demonstrate, a careful consideration of possible player goals reveals that these choices, which seem to have no difference in their outcomes, can actually have significance for the extra-digital narrative produced by the player, and they are thereby meaningful for players who are interested in role play.
-
-
-After highlighting modes of engagement in \emph{Mass Effect}, we give an example of contrasting modes of engagement by looking at \emph{Undertale}'s central repeated choice of how to interact with wandering monsters \citep{fox2015undertale}.
+We start with an example of contrasting modes of engagement by looking at \emph{Undertale}'s central repeated choice of how to interact with wandering monsters \citep{fox2015undertale}.
 %
 \emph{Undertale}'s plot revolves around the player's aggression: does the player take their cue from other games and attack every `monster' they come across, or do they instead use the game's unusual `Mercy' option to avoid violence?
 %
@@ -154,13 +145,13 @@ Our analysis of \emph{Undertale} examines both how that choice changes as the pl
 The game reinforces both aggressive and pacifist styles but gives those players different endings to encourage dialogue within the player community.
 
 
-After exploring the importance of modes of engagement, we shift focus by deconstructing a repeated choice from \emph{Papers Please}: whether or not to approve the entry permit of someone who claims to be a refugee \citep{pope2013papers}.
+After exploring the importance of modes of engagement, we shift focus by deconstructing a repeated choice from \emph{Papers, Please}: whether or not to approve the entry permit of someone who claims to be a refugee \citep{pope2013papers}.
 %
-\emph{Papers Please} uses a carefully crafted choice structure to illustrate to the player how autocratic regimes instill complicity in their citizens by manipulating uncertainty.
+\emph{Papers, Please} uses a carefully crafted choice structure to illustrate to the player how autocratic regimes instill complicity in their citizens by manipulating uncertainty.
 %
 A detailed analysis of the options and outcomes involved reveals exactly how this choice structure operates, and how it would take a different form without the element of uncertainty.
 %
-By putting the player in a situation in which they themselves become complicit, \emph{Papers Please} leverages the full power of interactive media to evoke empathy via interactive perspective-taking.
+Choice poetics is useful here because it can show explicitly how important uncertainty is to the effect achieved by \emph{Papers, Please}, illustrating not just that the game \emph{does} encourage complicity, but the subtle psychological mechanism it uses to do so.
 
 
 By providing examples of the application of choice poetics ``by hand'' as opposed to algorithmically, we hope to inspire others to use and eventually help refine this theory.
@@ -173,48 +164,22 @@ Although we do not believe in formalism as an ultimate goal of literary (or inte
 
 As already mentioned, this work builds on our previous work on the theory of choice poetics.
 %
-In particular, our paper ``Towards a Theory of Choice Poetics'' \citep{mawhorter2014towards} provides a concise summary of the aims of the theory and the phenomena that it attempts to explain, and Peter Mawhorter's dissertation \citeyear{mawhorter2016artificial} contains a chapter that provides a more detailed examination of the theory, including a walkthrough of the \emph{Papers Please} example that we also present here.
+In particular, our paper ``Towards a Theory of Choice Poetics'' \citep{mawhorter2014towards} provides a concise summary of the aims of the theory and the phenomena that it attempts to explain, and Peter Mawhorter's dissertation \citeyear{mawhorter2016artificial} contains a chapter that provides a more detailed examination of the theory, including a walkthrough of the \emph{Papers, Please} example that we also present here.
 %
 It is worth acknowledging the lines of inquiry that choice poetics is in dialogue with, including formalist narratology (from Aritstotle \citeyear{aristotle1917poetics} to Barthes \citeyear{barthes1975introduction}), the psychology of narrative \citep{tversky1981framing,green2000role,mar2008function,zunshine2006why}, the psychology of decision-making \citep{mellers1997decision,schwartz2002maximizing}, and of course other modern theories of interactive narrative \citep{aarseth1997cybertext,murray1997hamlet,ryan1991possible,tosca2000pragmatics,mateas2001preliminary,frasca2003ludologists,lindley2005story}.
+%
+The specific ideas about modes of engagement and player motivations used here are based largely on the work of Yee \citeyear{yee2006motivations}, along with other work summarized in \citep{hamari2014player}, although choice poetics can also incorporate non-standard modes of engagement such as critical play \citep{flanagan2009critical} (see Chapter 3 of \citep{mawhorter2016artificial} for a more detailed explanation of these links).
+%
+Other relevant studies provide insight into how engagement can be driven by multiple desires \citep{lindley2005story}, can be affected by choices and their consequences \citep{mallon2005stand}, and can change over time \citep{lange2014youre}.
 %
 The development of choice poetics was also informed by non-academic writing on choice design, such as design advice for authors of online interactive narratives \citep{choiceofgames2010rules} or tabletop roleplaying game masters \citep{laws2001robin}.
 %
 Finally, concurrent experimental work (including some of our own) around choices and outcomes in games has provided useful empirical data about choices and their consequences \citep{fendt2012achieving,cardonarivera2014foreseeing,mawhorter2015generating,iten2018choosing}.
-%
-In the context of our present analysis, it is useful to also discuss existing theoretical treatments of the specific choice types under consideration.
 
-\subsection{False Choices}
-
-The subject of false choices in games has already received serious critical and scholarly attention.
-%
-For instance, the \emph{Extra Credits} video series (which focuses on games criticism for a popular audience) has discussed false choices, and even used \emph{Mass Effect} as an example \citep{floyd2013illusion}.
-%
-Their analysis focuses on the necessity of false choice as a means of avoiding budget problems due to content expansion, but our analysis emphasizes the fact that these choices are not completely illusory, at least for certain players.
-%
-As already mentioned, scholarly studies of \emph{Mass Effect} have also touched upon the subject:
-\begin{itemize}
-  \item In ``Game Characters as Narrative Devices. {A} Comparative Analysis of \emph{Dragon Age: Origins} and \emph{Mass Effect 2},'' Kristine J{\o}rgensen (\citeyear{jorgensen2010game}) discusses role play in \emph{Mass Effect 2} and mentions the limited agency given to the player. They can shape the main character's actions to a degree, but don't have full control over the end result, in part because of discrepancies between player-selected text and the voice-acted outcomes that result. The resulting distance between character and player is something that players who are interested in full control over the construction of their character's persona might want to erase, and we argue here that seemingly inconsequential choices can give the player some room to do so.
-  \item In ``\emph{Mass Effect 2}: A Case Study in the Design of Game Narrative,'' Jim Bizzocchi and Joshua Tanenbaum (\citeyear{bizzocchi2012mass}) discuss several playthroughs of \emph{Mass Effect 2}, and give a detailed account of their experiences. They also briefly mention false choices, as well as the fact that the main character has certain qualities that are outside the player's control.
-\end{itemize}
-
-Other work not related to \emph{Mass Effect} has also discussed the impacts of choices and how these affect the player.
-%
-For example, Anders Tychsen and Michael Hitchens have talked about how consequences are managed in the shared narrative worlds of multiplayer online games \citep{tychsen2006ghost}, and Richard Andrews has explained in detail how \emph{The Stanley Parable} is ultimately about the constructed nature of choices in games and how that inevitably limits the player's agency \citep{andrews2017metagames}.
-%
-Gail Carmichael and David Mould have grappled with how player choice can be reconciled with nonlinear narrative techniques, and discuss different levels of playability; a useful framework for thinking about \emph{Mass Effect}'s choices \citep{carmichael2014chronologically}.
-
-
-Because our take on \emph{Mass Effect}'s choices is that they matter to some players but not others, it is also important to mention previous work on modes of engagement with games.
-%
-Craig Lindley has an excellent treatment of some of these modes, and discusses the different pleasures of being a passive audience member, an active performer, and a completely immersed player \citep{lindley2005story}.
-%
-In particular, Lindley's performer mode of engagement specifically addresses the pleasures of performance that we claim are affected by the ``false'' choices in \emph{Mass Effect}.
-%
-Interestingly enough, empirical studies of player behavior suggest that while people who explicitly role-play are probably not a majority \citep{lange2014youre}, many do still enjoy interactions related to characterization in narrative games (\cite{mallon2005stand}, see especially pp. 6--7).
 
 \subsection{Moral Choices}
 
-Our second analysis engages with the popular 2015 indie roleplaying game \emph{Undertale} and how players with similar goals but different priorities can be steered towards different decisions.
+Our first analysis engages with the popular 2015 indie roleplaying game \emph{Undertale} and how players with similar goals but different priorities can be steered towards different decisions.
 %
 Existing scholarly literature on \emph{Undertale} has examined its portrayal of morality and ethics through its primary choice of 'kill' or 'spare' \citep{muller2017undertale}, the ways the game solidifies the significance of its choices through various mechanics \citep{day2017agency}, and how its musical score changes from tonal and pleasant to atonal and eerie depending on the player's approach \citep{perez2017undertale}.
 %
@@ -228,107 +193,49 @@ The addictive quality of ``numbers increasing'' is what drives a lot of games. B
 \end{quote}
 
 
+As described by Müller, Undertale's various endings have encouraged the player community to discuss attitudes towards violence both in games and in real life (\cite{muller2017undertale}, §2.2.1).
+%
+The usefulness of choice poetics in this context is that is provides a concrete way of describing which aspects of Undertale's central kill/spare choice are mobilized to achieve this result, and by contrasting two different possible player perspectives, it illustrates how different players might naturally be encouraged to pursue different play styles and therefore observe different content, providing fodder for online discussion.
+%
+Of course, a formalist analysis is not the only way to reach that conclusion, but it is a mechanical and reproducible way to do so, potentially making it accessible to novice critics (and as in our prior work, to automated systems).
+
+
 Broader research on moral choices in games includes examinations of their implementation and studies of how players respond to them \citep{svelch2010good,weaver2012mirrored,consalvo2016playing}.
 %
 Of course, research on the psychological effects of games, especially violent games, is quite popular, but has come to largely mixed conclusions \citep{ferguson2008school,ellithorpe2015moral}.
 %
 In fact, there is also interest in using video games to encourage better moral decision making \citep{kastarov2017training}
 
+
 \subsection{Coercion and Complicity}
 
-In our third example analysis, we will discuss complicity in \emph{Papers Please}, and use a detailed breakdown of a single choice to illustrate how this moral issue is raised within the game.
+In our second example analysis, we will discuss complicity in \emph{Papers, Please}, and use a detailed breakdown of a single choice to illustrate how this moral issue is raised within the game.
 %
 A version of this analysis appears in \citep{mawhorter2016artificial}, but a more thorough analysis of the game and its themes has also been undertaken by 
 Paul Formosa, Malcolm Ryan, and Dan Staines (\citeyear{formosa2016papers}; for a critical perspective, see also \cite{alexander2013designing}, which Formosa et al. cite themselves).
 %
-Formosa, Ryan, and Stanies' excellent analysis of the game and its relationship with morality largely agrees with our conclusion that the game uses ambiguity as a mechanism to encourage complicity, and in fact they even quote personal correspondence with Lucas Pope, the game's designer, to the same effect: ``On some level I want players to reach a point of self-realization---about how good people can be turned into uncaring cogs,'' (Pope quoted in \cite{formosa2016papers}).
+Formosa, Ryan, and Staines' excellent analysis of the game and its relationship with morality largely agrees with our conclusion that the game uses ambiguity as a mechanism to encourage complicity, and in fact they even quote personal correspondence with Lucas Pope, the game's designer, to the same effect: ``On some level I want players to reach a point of self-realization---about how good people can be turned into uncaring cogs,'' (Pope quoted in \cite{formosa2016papers}).
 %
-We believe that the choice poetics approach to analysis is useful not because it can reach the same conclusions as others, but because it can give a detailed accounting of why a particular choice operates in the way it does, and from a designer's perspective, may offer insight about what to tweak to change the player experience.
+We find these congruences encouraging, because they show that choice poetics can produce conclusions that are not only echoed by other analyses but which also seem to have been intended by the designer themselves.
+%
+Of course, if existing analyses have reached these conclusions already, why use choice poetics at all?
+%
+In this case, choice poetics provides a more detailed accounting of the importance of ambiguity in terms of the choices faced by the player, and is able to explain exactly why removing ambiguity would change a (hypothetical) player's perspective on the game.
+%
+Such detailed accounting of the impact of outcomes could be useful for designers interested in tweaking their choices to best support desired narrative or persuasive goals, and in fact, at least for machine-designed choices, this has shown to be somewhat effective (see \cite{mawhorter2015intentionally}).
 
 
-Beyond analyses of \emph{Papers Please}, other scholarly work dealing with complicity in games is relevant here.
+
+Beyond analyses of \emph{Papers, Please}, other scholarly work dealing with complicity in games is relevant here.
 %
 Toby Smethurst and Stef Craps have discussed the appearance of trauma in games, including a section on complicity \citep{smethurst2015playing}.
 %
-Their work is also relevant to our analysis of \emph{Mass Effect} because they discuss role-playing and false choices.
-%
 In a similar vein, Holger Pötzsch has discussed complicity in games, again in the context of more scripted narrative settings \citep{potzsch2017selective}.
 %
-Both of these analyses include \emph{Spec Ops: The Line} \citep{yager2012spec} as an example of a game that deals with complicity, but it does so in a completely different manner to \emph{Papers Please}, using a scripted narrative and being much more direct and extreme about the moral decisions being made (see also \cite{murray2016race} on the game's failure to grapple with issues of racism and sexism even as it does address toxic masculinity).
-
-\section{``False'' Choices in \emph{Mass Effect}}
-
-The first step in any choice poetic analysis is determining the motivations and goals of the player(s) you want to consider.
-%
-Generally, there will be multiple player types who will engage differently with a choice under consideration, and identifying these player types (or even just limiting analysis to a single type for expedience) is a prerequisite for detailed choice analysis.
-%
-False choices in \emph{Mass Effect} help to illustrate why these considerations are so important, because despite having no \emph{systemic} consequences within the game, they offer opportunities for the player to flesh out their own version of the main character who has specific mannerisms and preferences.
-%
-For players interested in engaging with the game as role players, especially those who want to act out a specific persona, these ``false'' choice have real consequences.
-
-
-For a detailed description of \emph{Mass Effect} gameplay (largely the same between different games in the trilogy), we invite the reader to consult \cite{bizzocchi2012mass}.
-%
-For our purposes, it suffices to note that within a science fiction universe, the player is thrust into the role of Commander Shepard, the protagonist in a galactic struggle to unite several alien factions against a formidable and ancient threat.
-%
-Although the player may choose a first name, the outline of a backstory, and a profession for Shepard, the character has some distinctive qualities that the player cannot really alter: Shepard will always be a commander, and will take an active role in the events that unfold.
-
-
-Throughout the game, interactions with other characters are carried out via dialogue trees, where options are selected from a wheel of responses.
-%
-Fig. \ref{fig:ME_false} shows an example of this interface, and also illustrates the most extreme version of a false choice---in the choice shown, all three text options lead to exactly the same spoken response (and they have no other consequences within the game later)\footnote{A video that gives more context for this choice and which shows the responses to different choices throughout this scene is available at: \url{https://www.youtube.com/watch?v=8BewZnUnDoE}}.
-%
-As with most choices in the game, none of the text responses exactly matches the spoken dialogue, and this serves not only to obfuscate false choices like this one but also to position the text choices as something closer to a character's internal monologue than an external diegetic utterance.
-%
-Thinking of the option text in this way reveals that although these choices may not have consequences within the game, they do lead to different portrayals of Shepard's character.
-%
-When faced with stonewalling from the council bureaucracy, who in this case are denying his eyewitness testimony against a traitorous special agent, is Shepard the kind of person who is defiant, or resigned?
-
-
-The spoken response is cleverly crafted so that it can be read in multiple ways.
-%
-If you selected ``You won't see the truth,'' Shepard's utterance seems to take on more defiant undertones than if you selected ``What's the point?'' even though the delivery is identical.
-%
-And although within the mechanical systems of the game this choice has no consequences, Shepard's attitude is an important part of who they are, so for someone interested in crafting a specific narrative that portrays Shepard in a particular light (as e.g., \cite{bizzocchi2012mass} did in their close playing of \emph{Mass Effect 2}), the nuances of these responses have consequences for that portrayal.
-%
-Over the course of the game, the way that many ``false'' choices are made can add up to redefine the character enacted by the player, and since in many cases some choices along a particular axis (such as the defiant--resigned range suggested here) will have more serious in-game consequences, not all of them need to in order to have meaning to the player.
-
-
-To draw this same conclusion by another process, we can observe that even at the player-goal estimation stage of choice poetics analysis, it becomes clear that any mechanics-related considerations regarding this choice will be irrelevant, because it produces no distinct in-game outcomes.
-%
-If an analyst were to consider this choice using a set of diegetic player goals, they would rightly conclude that although the options presented might \emph{suggest} some relevance (e.g., to a goal of pleasing the council members), the outcome, due to being singular, does not actually have any.
-%
-However, such an analytical outcome should naturally provoke the question: ``For what set of player goals \emph{would} this choice have different outcomes?''---to which the answer is exactly: a set of player goals which includes preferences over not only in-game outcomes but also external considerations, such as the story that the player helps to express through their gameplay.
-
-
-Even the partial lists of modes of engagement that have been suggested for choice poetics (see e.g., \cite{mawhorter2014towards}) include role play as an important player perspective, and that is at least one perspective which includes goals involving the narrative produced by gameplay, rather than simply goals described in terms of the game's mechanics alone.
-%
-Once we begin to consider such goals, we have to take a different view of options and outcomes as well.
-%
-Whereas an initial analysis might label a choice as having only one outcome no matter the option selected, a more nuanced analysis would consider divergent portrayals of Shepard's character as divergent outcomes, with their own relationships with various possible player goals.
-%
-The result of this line of reasoning is the realization that even the illusion of choice can have consequences for players who value the impressions their play creates.
-
-\begin{figure}
-  \includegraphics[width=0.5\textwidth]{fig/anything_else_to_add_1.png}
-  \includegraphics[width=0.5\textwidth]{fig/made_your_decision_1.png}
-  \caption{Two screenshots from \emph{Mass Effect} showing the moment before and after making a choice. An NPC asks ``Do you have anything else to add, Commander Shepard?'' and the options given are labeled ``You won't see the truth,'' ``No,'' and ``What's the point?'' No matter which option you select, your character responds to the NPC with ``You've made your decision. I won't waste my breath.''}
-  \label{fig:ME_false}
-\end{figure}
-
-Although this conclusion may be apparent without resorting to a formal analysis of the choice in question, it highlights the importance of considering modes of engagement and player goals before analyzing a choice, and forced consideration of these factors tends to expose details like those explored here.
-%
-It may also seem ridiculous to focus so much analytical effort on a single choice in a now decade-old game, but the broader implications of this line of reasoning should be of interest to designers.
-%
-Rather than viewing such false choices as an evil necessitated by budgetary constraints, they can be thought of instead as opportunities to let the player develop their character in ways outside of the capabilities of whatever character modelling systems a game may contain.
-%
-After all, \emph{Mass Effect} has an entire subsystem dedicated to tracking a player's ``paragon'' and ``renegade'' points and attaching consequences to their actions along one dimension of behavior, but this choice does not engage with that system directly.
-%
-Instead, choices such as this allow the player the opportunity to develop their character along a multitude of psychological dimensions without the designers having to implement systems for all of those.
+Both of these analyses include \emph{Spec Ops: The Line} \citep{yager2012spec} as an example of a game that deals with complicity, but which does so in a completely different manner to \emph{Papers, Please}, using a scripted narrative and being much more direct and extreme about the moral decisions being made (see also \cite{murray2016race} on the game's failure to grapple with issues of racism and sexism even as it does address toxic masculinity).
 
 
 \section{Reinforcing Disparate Choices in \emph{Undertale}}
-
 
 \emph{Undertale} is an independently developed roleplaying game \citep{fox2015undertale} about a kid trying to get back home.
 %
@@ -347,26 +254,27 @@ These paths allow for the game to be a straightforward example of what happens w
 
 Figure \ref{fig:UT_froggit} shows the very first random encounter of the game, and illustrates the repeated central choice of whether to fight, flee, or `spare' each opponent (``Flee'' and ``Spare'' are the options in the ``Mercy'' menu).
 %
-With the exception of certain bosses, all `enemies' in the game must be dealt with in one of these three ways, where killing them awards gold and experience points, fleeing gives no reward, and sparing them awards just gold, and is only possible after taking a specific sequence of actions that pacify the opponent which the player must learn for each type of `monster.'
+With the exception of certain bosses, all `enemies' in the game must be dealt with in one of these three ways, where killing them awards gold and experience points, fleeing gives no reward, and sparing them awards just gold, which is only possible after taking a specific sequence of actions that pacify the opponent which the player must learn for each type of `monster.'
 %
 To understand how this repeated choice is set up to create dialogue within player communities, we can break it down using a formal analysis.
 
 
-To simplify the analysis somewhat, we ignore concerns about player skill, which would provide a motive to select the `flee' option.
+To simplify the analysis somewhat, we ignore concerns about player skill, which would provide an extra motive to select the `flee' option.
 %
 Although contrasting approaches to this choice across players of different skill levels would also be an interesting approach, we consider here the perspective of players that have no trouble with the challenges involved in either attacking or pacifying the enemies.
 
-The remaining subsections here describe the results of each of the analysis steps outlined in section \ref{sec:analysis_steps}, and how they differ both for two different model players and between initial and subsequent encounters with the choice.
+
+The remaining subsections here describe the results of each of the analysis steps outlined in section \ref{sec:analysis_steps}, and how they differ both for two different player models and between initial and subsequent encounters with the choice.
 %
-Our first model player (we'll call them the power player) is an experienced roleplaying game player, who is familiar with the conventions of the genre and who expects to be asked to fight their way to victory, collecting experience and gold along the way to gain power and overcome challenging bosses.
+Our first player model\footnote{A player model is defined as a specific set of prioritized goals, which makes it more specific than a `player type' as used in other literature, although our player models in this analysis roughly correspond to two popular `player types' identified in the literature (see the related work section).} (we'll call them the power player) is intended to model an experienced roleplaying game player, who is familiar with the conventions of the genre and who expects to be asked to fight their way to victory, collecting experience and gold along the way to gain power and overcome challenging bosses.
 %
-Our second model player (we'll call them the story player) is someone who has little experience with roleplaying games and is interested in experiencing the story of \emph{Undertale}.
+Our second player model (we'll call them the story player) attempts to approximate someone who has little experience with roleplaying games and is interested in experiencing the story of \emph{Undertale}.
 %
-In terms of modes of engagement (cf. \cite{mawhorter2014towards}), these model players are focused on power play and avatar play respectively.
+In terms of modes of engagement (cf. \cite{mawhorter2014towards}), these players model are focused on power play and avatar play respectively.
 
 \subsection{Goal Analysis}
 
-We use the following set of goals, with the listed power/story priorities for our respective player models:
+We use the following set of goals, with the listed power/story priorities for our respective player models (these prioritized goal sets \emph{are} the player models):
 
 \begin{itemize}
   \item Gain experience points (high/low)---The power player prioritizes experience points (XP), knowing that they may be necessary to accumulate power and beat the game. The story player understands them as a reward, but does not seek them out to the detriment of other goals.
@@ -375,7 +283,11 @@ We use the following set of goals, with the listed power/story priorities for ou
   \item Explore options (low/high)---Faced with a new game, both the power and story players are interested in figuring out what makes this game unique and what is possible within it, although for the power player this is secondary to other concerns. The `Mercy' menu especially, as an unconventional option, will attract interest.
   \item Behave consistently (low/low)---Both of our hypothetical players not only exhibit standard human biases towards consistent action (and justification of their past actions using future actions), but also recognize that in most game systems, rewards are reserved for extreme behavioral profiles. This goal does not trump others, but influences ambiguous cases.
 \end{itemize}
-Although these exact goal sets might not be those of real players, they serve our purpose of illuminating \emph{Undertale}'s choice poetics.
+Although these exact goal sets might not be those of any actual player, defined relative to each possible outcome of a random encounter, they do approximate common aspects of player psychology described within existing literature (e.g., the `Achievement' and `Immersion' dimensions from \cite{hamari2014player}).
+%
+Any concerns about particular goals or their prioritization could always be investigated by contrasting results with yet another player model that differed from one of these in terms of the goal in question, and of course, were data on actual player goals available in some form, it could be used to define detailed player models for personalized or aggregate analysis.
+%
+Examples of blind playthroughs uploaded to YouTube (e.g., \cite{fuandon2015lets} for the story player model and \cite{therpgminx2015lets} for the power player model) also support the idea that these profiles might model some actual players.
 
 \begin{table}[H]
 \centering
@@ -396,9 +308,7 @@ Although these exact goal sets might not be those of real players, they serve ou
 
 \subsection{Likelihood Analysis}
 
-The next task is to decide which options suggest what outcomes.
-%
-Per our earlier examination of false choices, this can be tricky, as there is a wide range of possible outcomes to consider.
+The next task is to decide which options suggest what outcomes, which can be tricky, as there is a wide range of possible outcomes to consider.
 %
 Luckily, our choice of player goals can narrow that range somewhat---for example, in this analysis, we have assumed our players are skilled enough that they will always succeed, so we ignore outcomes related to player injury or death.
 
@@ -433,8 +343,36 @@ For the extra-diegetic outcomes, players who have explored all the options will 
   & & & && \hinders{} (S) & & \hinders{} (P) \\
   \bottomrule
 \end{tabular}
-  \caption[\emph{Undertale}option analysis]{Option analysis for the example choice shown in Fig. \ref{fig:UT_froggit}. The results for initial and subsequent encounters are shown separately in the left and right halves of the table. All of the labels apply to both of our player models, except the be-consistent labels for the subsequent analysis, where the power (P) and story (S) players each view either `fight' or `spare' as consistent and the other options as inconsistent (elsewhere stacked labels indicate that multiple labels apply for both models).}
+  \caption[\emph{Undertale}option analysis]{Option analysis for the example choice shown in Fig. \ref{fig:UT_froggit}. The results for initial and subsequent encounters are shown separately in the left and right halves of the table. All of the labels apply to both of our player models, except the be-consistent labels for the subsequent analysis, where the power (P) and story (S) player models each view either `fight' or `spare' as consistent and the other options as inconsistent (elsewhere stacked labels indicate that multiple labels apply for both models).}
 \label{tab:UT_options}
+\end{table}
+
+
+\begin{table}[H]
+\centering
+\begin{tabular}{c c c c c c}
+  \toprule
+\multicolumn{6}{c}{\textbf{Power Player}} \\
+  \midrule
+  \textbf{Priority} & \textbf{Fight} && \textbf{Flee} && \textbf{Spare} \\
+  \cmidrule(r){1-1} \cmidrule{2-2} \cmidrule{4-4} \cmidrule{6-6}
+  \centering High & \advances{}$\times$2 && \hinders{}$\times$2 && \advances{}$\times$1, \hinders{}$\times$1  \\
+  \cmidrule(r){1-1} \cmidrule{2-2} \cmidrule{4-4} \cmidrule{6-6}
+  \centering Low & \advances{}$\times$1 && \hinders{}$\times$1 && \hinders{}$\times$1 \\
+  \bottomrule
+  \multicolumn{6}{c}{\vspace{1em}} \\
+  \toprule
+\multicolumn{6}{c}{\textbf{Story Player}} \\
+  \midrule
+  \textbf{Priority} & \textbf{Fight} && \textbf{Flee} && \textbf{Spare} \\
+  \cmidrule(r){1-1} \cmidrule{2-2} \cmidrule{4-4} \cmidrule{6-6}
+  \centering High & \hinders{}$\times$1 && \advances{}$\times$1 && \advances{}$\times$1  \\
+  \cmidrule(r){1-1} \cmidrule{2-2} \cmidrule{4-4} \cmidrule{6-6}
+  \centering Low & \advances{}$\times$2, \hinders{}$\times$1 && \hinders{}$\times$3 && \advances{}$\times$2, \hinders{}$\times$1 \\
+  \bottomrule
+\end{tabular}
+  \caption[\emph{Undertale}option summary]{Option analysis results from the right-hand (post-hoc) side of Table \ref{tab:UT_options}, grouped according to player models, options, and goal priorities. This illustrates at a high level how (after exploring each option) the power player is encouraged to fight `monsters' while the story player is encouraged to spare them.}
+\label{tab:UT_option_summary}
 \end{table}
 
 \subsection{Prospective Analysis}
@@ -444,6 +382,8 @@ Having listed a set of suggested outcomes and their likelihoods, the analysis ca
 The results are shown in Table \ref{tab:UT_options}, which includes two versions: the block on the left shows evaluations using the initial likelihoods, while the block on the right shows the evaluations after all outcomes are known.
 %
 The subsequent results also use (P) and (S) to show labels that differ between the power (P) and story (S) player models (mostly, the two models just have different priorities for the different goals).
+%
+The post-hoc evaluations from the right side of Table \ref{tab:UT_options} are further summarized in Table \ref{tab:UT_option_summary} which shows at a high level how many goals are advanced or hindered by each option for the two player models.
 
 
 In this case, we can see that for both player models, the fight and spare options are more attractive than the flee option, and in fact the spare option dominates the flee option for this goal set in all cases, making it mostly irrelevant (of course, this is because we are ignoring player skill as a factor).
@@ -477,7 +417,7 @@ After making each decision, the immediate rewards are as expected.
 %
 However, as the game progresses there are longer-term consequences for both systematic approaches that we consider here.
 %
-In particular, towards the end of the game, the story line diverges sharply, in the aggressive case throwing the player into brutal battles against several bosses, and in the passive case allowing the player to befriend some of those characters and not fight them at all (although other bosses appear).
+In particular, towards the end of the game, the story line diverges sharply, in the aggressive case throwing the player into brutal battles against several bosses, and in the passive case allowing the player to befriend some of those characters and not fight them at all (although other bosses appear)\footnote{Note that these divergences still happen even if the player does not reach one of the special endings to the game, which typically require extensive forethought and would not be reached by first-time players who don't consult a guide.}.
 
 
 The long-term consequences of these individual decisions are not simply rewards or punishments, although sparing monsters leads to a happier story outcome.
@@ -489,19 +429,53 @@ By reinforcing each path separately and letting content diverge significantly, \
 Had the game simply punished players for fighting the enemies, this would have delivered a fairly simplistic moral message, but instead, the game lets that message unfold via dialogue with other players, and as previously mentioned, uses some extra-diegetic mechanics to give its choices extra permanence.
 
 
-As explored in Hughes' review of the game \citeyear{hughes2015undertale}, part of the message of \emph{Undertale} is not merely about violence itself, but about the player's willingness to callously manipulate the lives of the characters in the game.
+\subsection{Discussion}
+
+This analysis set out with the goal of understanding how two different player models could be encouraged to routinely deal with \emph{Undertale}'s randomly-encountered `monsters' in different ways.
 %
-The moral dichotomy that it sets up through a carefully crafted choice that will separate its audience into opposing camps serves to underline this point and get players to think deeply about it as they attempt to justify their decisions to each other.
+After understanding the prospective option impressions involved for both initial and repeated iterations of this choice, we can see that the reward structure does indeed encourage power-focused and story-focused players to take different paths, and rewards them for doing so in different ways.
+%
+By deconstructing \emph{Undertale}'s repeated kill/spare choice using two generic player models, we have gotten some insight into how different players might be encouraged to explore the game differently, but of course there are other important choices in the game and quite a few mechanisms that help push players down one path or the other.
+
+
+
+As explored in Hughes' review of the game and Müller's thesis \citep{hughes2015undertale,muller2017undertale}, part of the message of \emph{Undertale} is not merely about violence itself, but about the player's willingness to callously manipulate the lives of the characters in the game.
+%
+The moral dichotomy that it sets up through a carefully crafted choice that will separate its audience into opposing camps serves to underline this point and get players to think deeply about it as they attempt to justify their decisions to each other (see e.g., \cite{oh2016genocide} for an example of discussion within the player community).
+
+
+As stated previously, the value of choice poetics here is not that it produces some completely novel insight, but that it can explain the mechanisms behind narrative choices with more specificity.
+%
+For example, in Table \ref{tab:UT_option_summary}, we can see that for our story player model, both the fight and spare options are not purely good or bad: the fight option advances some low-priority goals, while the spare option hinders one.
+%
+As a designer, if we wanted to tweak this choice to more strongly reinforce sparing the monsters, we could consider rewarding some XP for sparing monsters, which would cause the spare choice to dominate the fight choice for players interested in showing mercy.
+%
+By the same token, the choice \emph{not} to do so makes the spare option more meaningful: the player actually has to make a sacrifice in order to access it, which potentially increases psychological attachment to that choice, and which might also heighten the player's sense of agency.
+
+
+These kind of detailed observations about individual outcomes are something that choice poetics enables naturally, whereas less formal analyses might not support such without extra consideration.
+%
+More specifically, choice poetics offers a mechanism whereby approaching a choice with a specific question (e.g., ``How do power and story players approach this choice differently?'') leads to formal descriptions of that choice that can be used to answer other questions (e.g., ``How would awarding XP for sparing monsters change this choice?'').
+%
+In the best case, those formal descriptions or the process of their production might naturally raise further questions that highlight as-yet-unconsidered issues with the design of a choice.
+%
+For example, in this analysis, we noted in passing that the flee option is always dominated by one of the other options assuming the player has a certain level of skill.
+%
+That observation immediately prompts the question: how do different levels of difficulty affect the player's perception of this choice, which could be answered using further comparative analysis that introduced goals related to self-preservation and player models with different skill levels (which would be modelled using outcome likelihoods for taking damage and/or dying).
+%
+Although there is not room here to carry out that analysis, the fact that our initial analysis suggests it is a good sign that choice poetics as a formal system can be a productive tool for engaging these kinds of analytical questions.
 
 \begin{figure}[H]
   \includegraphics[width=\textwidth]{fig/papers-please-visa-choice.png}
-  \caption{A screenshot from \emph{Papers Please} showing the interface as the player decides whether or not to admit a traveler. The traveler in question claims that she was denied an entry permit but will be killed if turned away. At this point, the player may pursue further questioning or examine the details of the applicant's passport, but must eventually either approve or deny her entry visa.}
+  \caption{A screenshot from \emph{Papers, Please} showing the interface as the player decides whether or not to admit a traveler. The traveler in question claims that she was denied an entry permit but will be killed if turned away. At this point, the player may pursue further questioning or examine the details of the applicant's passport, but must eventually either approve or deny her entry visa.}
   \label{fig:PP_visa}
 \end{figure}
 
-\section{Uncertainty and Complicity in \emph{Papers Please}}
 
-\emph{Papers Please} \citep{pope2013papers} gives the player the role of a border inspector in the fictional autocratic regime of Arstotzka.
+
+\section{Uncertainty and Complicity in \emph{Papers, Please}}
+
+\emph{Papers, Please} \citep{pope2013papers} gives the player the role of a border inspector in the fictional autocratic regime of Arstotzka.
 %
 Struggling to support their family at home, they are challenged to quickly inspect passports, visas, and eventually travel permits and vaccination records to either permit or deny entry for a stream of hopeful immigrants and travelers, earning money for each applicant correctly approved or denied.
 %
@@ -514,7 +488,7 @@ Of interest to this analysis is the choice shown in Fig \ref{fig:PP_visa}, which
 %
 In each case, the player must decide whether to take someone at their word that despite a missing or incorrect document, they deserve admission because they would face terrible consequences were they refused.
 %
-This decision is complicated by the fact that the game also presents situations where entrants attempt to bribe or threaten the player, implying that not all of their claims can be taken at face value.
+This decision is complicated by the fact that the game also presents situations where applicants attempt to bribe or threaten the player, implying that not all of their claims can be taken at face value.
 %
 This decision about the fate of an ostensible refugee embodies one of the central themes of the game: how the uncertainty of information from unreliable sources can be pitted against the certain plight of one's family to turn a moral dilemma into a choice with a reluctant ``better'' option.
 %
@@ -530,7 +504,21 @@ For the purposes of understanding this choice, it is sufficient to use a single 
   \item (low-priority) Admit approved travellers---all else being equal, the player seeks to treat applicants fairly and admit those that have everything in order.
 \end{itemize}
 If we were concerned about differences between players, we could repeat this analysis with another set of player goals and contrast the results, as we did with \emph{Undertale}.
+%
+Note that especially in this case, the results of the analysis inform and justify the player model used.
+%
+If results differ significantly from what we know about a choice, there are two possibilities: either one or more of our assumptions (about goals, goal priorities, and/or the perception of outcomes) was wrong, in which case we can revise or extend our assumptions and re-do the analysis, or what we thought we knew was wrong, and we should be able to use our analysis to demonstrate why.
+%
+In this case, we think, based on other analyses and interviews with the game designer, that \emph{Papers, Please} uses ambiguity to encourage complicity, and through a formal analysis, we should be able to either back up that intuition or demonstrate why things do not actually work that way.
 
+
+Because of this process, our analysis is open to criticism of the choices of goals/priorities and of how it reasons about outcome likelihoods.
+%
+However, the most efficient means of dealing with such criticism is usually to expand the analysis or contrast it with a proposed alternative.
+%
+When the analysis agrees with other sources in its conclusions, the burden is on the critic to argue why a specific choice of goal priorities or outcome likelihoods is unrealistic, and demonstrate how that affects the overall argument put forward.
+%
+Ideally, of course, such questions might also be settled by gathering more data about player perceptions of goals and outcomes, and choice poetics provides a framework for doing so (see \cite{mawhorter2015intentionally}).
 
 \begin{table}[H]
 \centering
@@ -544,7 +532,7 @@ If we were concerned about differences between players, we could repeat this ana
   (unknown) Scam is rewarded & (unknown) Scam is thwarted \\
   \bottomrule
 \end{tabular}
-\caption[\emph{Papers Please} likelihood analysis]{Likelihood analysis for the choice shown in Fig. \ref{fig:PP_visa}.}
+\caption[\emph{Papers, Please} likelihood analysis]{Likelihood analysis for the choice shown in Fig. \ref{fig:PP_visa}.}
 \label{tab:PP_likelihoods}
 \end{table}
 
@@ -574,7 +562,7 @@ Note in particular the outcomes with unknown likelihood that represent competing
   admit-approved & <none> & <none> && <none> & <none> \\
   \bottomrule
 \end{tabular}
-  \caption[\emph{Papers Please} option analysis]{Option analysis for the example choice shown in Fig. \ref{fig:PP_visa}. The default analysis is shown on the left (`With Suspicion'), and a revised analysis assuming that the player trusts the applicant (`Without Suspicion') is shown on the right. See section \ref{sec:prospective_labels} for how the labels were applied.}
+  \caption[\emph{Papers, Please} option analysis]{Option analysis for the example choice shown in Fig. \ref{fig:PP_visa}. The default analysis is shown on the left (`With Suspicion'), and a revised analysis assuming that the player trusts the applicant (`Without Suspicion') is shown on the right. See section \ref{sec:prospective_labels} for how the labels were applied.}
 \label{tab:PP_options}
 \end{table}
 
@@ -584,7 +572,7 @@ The prospective analysis results are shown on the left side of Table \ref{tab:PP
 %
 From these results, we can immediately see that although both options threaten some goals, the deny option is clearly better with regards to the high-priority goal of feeding your family.
 %
-In fact, although approving the applicant \emph{might} be an ethical action, that is not certain, and denying the applicant might also be in line with ethical standards if in fact they are making up their story.
+In fact, although approving the applicant \emph{might} be an ethical action, that is not certain, and denying the applicant might also be in line with our player model's ethical standards if in fact they are making up their story.
 
 
 While this choice does not contain any well-known outcome patterns (cf. \cite{mawhorter2014towards}), it does involve some moral concerns, pitting one's desire to help one's family against concerns about turning away a refugee.
@@ -596,27 +584,30 @@ This new analysis has the structure of a classic dilemma: Two options, each of w
 Compared to the left side of Table \ref{tab:PP_options}, concerns about apprehending criminals are gone, and the refugee-related outcomes, now believed to be likely, make the moral weight of the decision unambiguous.
 
 
-This comparison thus illustrates exactly how \emph{Papers Please} (and governments) can manufacture complicity: by introducing doubts about the motives of strangers while emphasizing the certainty of outcomes for loved ones, a dilemma that clearly warrants serious moral concern can be transformed into an uneven choice where multiple avenues of justification are available.
+This comparison thus illustrates exactly how \emph{Papers, Please} (and governments) can manufacture complicity: by introducing doubts about the motives of strangers while emphasizing the certainty of outcomes for loved ones, a dilemma that clearly warrants serious moral concern can be transformed into an uneven choice where multiple avenues of justification are available.
 %
-Note in particular that the model player's goal of apprehending criminals was not a deciding factor in this case.
+Note in particular that the player model's goal of apprehending criminals was not a deciding factor in this case.
 %
 Regardless of the existence of that goal, uncertainty about the applicant's situation still eliminates any \advances{} labels from the `Approve' column while leaving the `Deny' column \hinders{}-free.
 %
 The ambiguous decision is still not an easy one, as evidenced by the fact that it \threatens{} a top-priority goal (behaving ethically).
 %
-This leaves the player feeling uneasy about the decision, and potentially helps prompt more reflection on the decision, but ultimately our model player will still view denying the application as the better choice once uncertainty is introduced.
+This leaves the player feeling uneasy about the decision, and potentially helps prompt more reflection on the decision, but ultimately our player model will still view denying the application as the better choice once uncertainty is introduced.
 
 \subsection{Retrospective Analysis}
 
-At the end of each day in \emph{Papers Please}, the player is paid based on the number of applicants they processed ``correctly,'' and then must decide how much money to allocate for family needs, such as food, heating, and eventually, medicine.
+At the end of each day in \emph{Papers, Please}, the player is paid based on the number of applicants they processed ``correctly,'' and then must decide how much money to allocate for family needs, such as food, heating, and eventually, medicine.
 %
 However, except in a few special cases, there is no information provided about the subsequent outcomes for the applicants who have entered the country that day.
 %
-The player is thus not given a chance to form any kind of justification for their beliefs about the truth of applicants' statements.
+In cases where information is available, it is as likely to raise more suspicions as assuage them: The player is eventually asked to participate in a plot to overthrow the Arstotzkan government, and both sides of the conflict are presented as having questionable motives.
+%
+The player is thus not given many chances to form justify their beliefs about the truth of applicants' statements, and in some cases, is given extra reasons to doubt them.
 %
 Of course, such blanket beliefs about future applicants based on past applicants are simple biases, not rational conclusions, because the applicants are independent of each other, but they would help assuage the player's conscience (or potentially inflame it if the evidence contradicted the player's assumptions).
 %
 However, by denying even such a false sense of closure, the game encourages the player to feel vaguely uneasy about their role.
+
 
 
 At the same time, by emphasizing the outcomes for the player's family, the game pushes the player away from the dilemma mindset and towards an obvious justification for complicity: the player ``had'' to act in the state's interests because their family's welfare was at stake.
@@ -625,32 +616,50 @@ From a choice poetic perspective, this choice thus has two interesting propertie
 %
 The withholding of information serves the purpose of introducing and even emphasizing the uncertainty about outcomes that tilts the choice as discussed above, while the emphasis on the relatively certain outcomes gives the player an extra push towards viewing the choice not as a moral dilemma but as a situation where there is only one ``correct'' choice.
 
+\subsection{Discussion}
+
+As with our \emph{Undertale} analysis, the conclusions we reach are the same as those of other analysts \citep{alexander2013designing,formosa2016papers}, which is encouraging, because it validates our methodology.
+%
+At the same time, the level of detail we achieve enables us to answer further questions: \emph{how} exactly does ambiguity play a role in encouraging complicity in \emph{Papers, Please}, and \emph{what} changes in player mindset or choice specifics might lead to a different outcome?
+
+
+Having set out to understand how exactly \emph{Papers, Please} uses ambiguity to encourage complicity, we have used choice poetics to provide a detailed explanation of the mechanisms behind this design choice.
+%
+The comparison presented in \ref{tab:PP_options} shows that suspicion about the motives of petitioners is key to turning a dilemma into a more murky and lopsided choice.
+%
+From this detailed analysis, we can also see which aspects of the player's mindset are necessary for this effect to occur: The player model's goal of apprehending criminals is surprisingly irrelevant to the deconstruction of the dilemma, because the goal of providing for one's family pushes in the same direction and is more clearly established by the context of the decision.
+%
+What is important instead is the player's willingness to be persuaded that some applicants do not deserve entry, and that denying them entry would be a good thing.
+%
+An anarchist player who believed that denying anyone entry was immoral (or at least, that some balance of honest and dishonest applicants should always be resolved to favor the honest applicants) would resist the technique used here and face a clear dilemma between feeding their family and obeying their conscience.
+
+
 \section{Conclusion}
 
-Through our analyses of \emph{Mass Effect}, \emph{Undertale}, and \emph{Papers Please}, we have demonstrated the concrete application of choice poetics to three very different choices, and hopefully the framework's utility is evident from the conclusions we have drawn.
+Through our analyses of \emph{Undertale} and \emph{Papers, Please}, we have demonstrated the concrete application of choice poetics to two very different choices.
 %
-Certainly, as already mentioned, the statements made here about both games have already been made to some degree by others, and choice poetics does not claim to generate insights that are radically different from those drawn by experienced games critics.
+As already mentioned, the conclusions drawn here about both games have already been reached by others, which confirms that our analytical approach is leads to sound conclusions.
 %
-Instead, choice poetics has three goals: first, to provide a \emph{computable} framework for automated reasoning about choices (as discussed in previous literature), second to make that framework accessible to critics (especially novice critics) so that they can systemically identify interesting aspects of a choice, and third, to provide a detailed language for talking about narrative choices to aid precise communication about their poetic effects, as well as precise reasoning about what changes might be made to achieve different effects.
+Relative to a typical close reading approach, choice poetics provides extra formal structure that encourages detailed observation and which can lead to secondary observations about the choice being analyzed.
+%
+In addition, where a close reading uses the author's experience to stand in for the experience of players, choice poetics forces the analyst to create explicit player models, thus reifying their assumptions about how choices will be perceived and opening them up for examination.
+%
+The assumptions that choice poetics makes about player goals are thus both a weakness (they might be wrong) and a strength (errors can be identified exactly, and contrasting analyses can test hypotheses about player goals).
+
+
+Besides encouraging more explicit examination of choices, we also hope that a formalist framework can make analysis more accessible to novice critics, allowing them to systematically identify interesting aspects of a choice, and that it can provide precise language for describing narrative choices and their poetic effects.
 %
 Ideally, choice poetics should support discussions about why and how a choice achieves its poetic effect, and should enable those discussions to be more detailed and specific.
 
 
-In our analysis of \emph{Mass Effect}, we demonstrated how the theory's emphasis on modes of engagement naturally leads to the question: ``If this choice doesn't \emph{seem} to have any relevant outcomes, for what kind of player (i.e., for what set of player goals) would it be relevant?''
-%
-From there, we found that although some of \emph{Mass Effect}'s choices have no mechanical or diegetic differences between outcomes, from a narrative perspective they can change the player's (or a spectator's) interpretation of a character, and that is enough to be meaningful to some players.
-%
-Ultimately, this analysis highlights the importance of considering player motives when analyzing choices, and also foregrounds how broad the notion of a `consequence' is in narrative games.
-
-
-Furthering our exploration of modes of engagement, we gave an example of paired choice analysis with \emph{Undertale}, showing how choice poetics can be used to contrast different play styles.
+To explore modes of engagement, we gave an example of paired choice analysis with a central and recurring choice from \emph{Undertale}, showing how choice poetics can be used to contrast different play styles.
 %
 The benefit in this case was a detailed look at how \emph{Undertale} separates players with different priorities into different choice patterns in order to encourage dialogue between players who experience the game differently, including how divergence is encouraged at both initial and subsequent encounters with a repeated choice.
 %
 Choice poetics helps pinpoint exactly which outcomes drive that separation, and what sets of priorities are necessary for it to happen.
 
 
-We then went into depth with \emph{Papers Please}, using prospective and retrospective analysis to pin down subtle characteristics of a common choice in that game.
+We then went into depth with \emph{Papers, Please}, using prospective and retrospective analysis to pin down subtle characteristics of a common choice in that game.
 %
 Noting how uncertainty undermined a dilemma configuration for that choice, we were able to describe in detail how that choice tilts players towards complicity with the game's fictional regime, and what other aspects of the choice design help contribute to this outcome.
 %
@@ -665,7 +674,7 @@ In all of the analyses presented here, we engage with choice poetics as human sc
 %
 Although choice poetics was designed with operationalization in mind, our analyses show that it can also be of use to human critics as a framework for discussion.
 %
-We also expect that the framework's systematic steps will be useful when confronted with choices that are difficult to understand, and that the notion of different model players will help illuminate choices that leave different actual players feeling different things.
+We also expect that the framework's systematic steps will be useful when confronted with choices that are difficult to understand, and that the notion of different player models will help illuminate choices that leave different actual players feeling different things.
 
 
 As we continue to develop this theory, we plan to explore further computational models and collect and analyze play traces to demonstrate the theory's utility in the domain of automated analysis, with the eventual goal of using it for on-line player modelling to enable responsive stories.
@@ -678,7 +687,7 @@ Of course, we will also continue examining games, and may come up with more exam
 \vspace{6pt} 
 
 % Supplementary material
-\supplementary{A video illustrating the possible outcomes of one false choice in \emph{Mass Effect} is available at \linksupplementary{s1}, as well as on YouTube at \url{https://www.youtube.com/watch?v=8BewZnUnDoE}.}
+\supplementary{}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \authorcontributions{Conceptualization, all authors; Investigation, Peter Mawhorter, Carmen Zegura, Alex Gray, and Arnav Jhala; Writing--Original Draft Preparation, Peter Mawhorter, Carmen Zegura, and Alex Gray; Writing--Review \& Editing, Peter Mawhorter and Noah Wardrip-Fruin.}
