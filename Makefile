@@ -1,6 +1,6 @@
 cpbe.pdf: cpbe.tex references.bib
 	pdflatex cpbe.tex
-	bibtex cpbe
+	#bibtex cpbe
 	pdflatex cpbe.tex
 	pdflatex cpbe.tex
 
